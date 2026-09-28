@@ -1,0 +1,6 @@
+# Same geometry, second frozen editor (editor-agnostic study).  Expects English prompts.
+editor:
+  name: sd_inpaint
+  options:
+    num_inference_steps: 50
+    guidance_scale: 7.5

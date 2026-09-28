@@ -1,0 +1,20 @@
+{
+  "env": {
+    "numpy": "2.2.6",
+    "opencv": "4.13.0",
+    "pillow": "12.0.0"
+  },
+  "cases": {
+    "local_box": "748fae8f5e6d697fa2798e72e75c6e4e9a66ba275febf9ada4e25f922a3634ae",
+    "local_box_highlat": "6317861681a8dfe75569780af7310944a85529fa67465da1a0f92997e30cb925",
+    "local_box_feather": "fb2067df8536d40bd30e881a4c5a27ff0be403985e61a8b7634cac622fee5aee",
+    "seam_current": "06091e15b322c4e0614cbc31ce4e3bd228045e8d6a94be44c3c1a51a9869b6e3",
+    "seam_split": "2c950fd6f5069c15cd7d278eccfa1d74db3ffc2fc3c5c3e905d46fc55c64b02a",
+    "seam_direct_circular": "430762c6ce7c51c7ba88b544876706366b8d9225309983ca45e233a8c82d15c3",
+    "seam_proposed": "87cb4ed03bfae571303a3b8172eef114fbc8b96e3683a8dd79465f8f060045dc",
+    "seam_split_tiled": "0026ecf3320cd3327e6e8fef544ecb7ba8b7a9d3aab22215008583ae76d8cb5f",
+    "seam_canonical_tiled": "a8768a1f33b348b6ceb531c9dccda43941bce0cb8c437c4331423993523dd08d",
+    "tiled_wide_box": "f69c486c6995b9bca2e2519d2b7964fe1a0d96fafe90757059b1cba89e14e589",
+    "multi_instance": "de24e62db780180262ac1b1fc6844c08af666ae180280d9af14348dc19110b7e"
+  }
+}

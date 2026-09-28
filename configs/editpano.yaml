@@ -1,0 +1,39 @@
+# EditPano default operating point (thesis Chapter 3).  Every key is optional;
+# omitted keys keep these defaults.  Override on the CLI with --set key=value.
+projection:
+  patch_size: 512          # rectilinear patch W_p = H_p
+  fov_margin: 1.5          # eta in theta = clip(eta * max(span_lon * cos(lat), span_lat))
+  fov_min: 30.0
+  fov_max: 150.0           # avoids the 180 deg gnomonic singularity
+  lat_aware_fov: true
+  hint_fov: 75.0           # FoV for manual view hints without a box
+composite:
+  mode: inward             # inward (bit-exact background) | feather | poisson
+  feather_px: 8            # inward ramp radius r
+  constrain_patch_to_mask: true
+  patch_mask_feather: 3    # rho_p, Gaussian radius of the patch-space constraint
+editor:
+  name: qwen               # qwen | sd_inpaint | fake:pattern | <entry-point>
+  model_id: null           # null -> Qwen/Qwen-Image-Edit-2511
+  seed: 0
+  device: null             # null -> cuda if available
+  options: {}             # backend kwargs; Qwen defaults: num_inference_steps 40,
+                           # true_cfg_scale 4.0, guidance_scale 1.0, use_mask_reference true
+gate:
+  confidence_threshold: 0.7
+  detection_min_confidence: 0.7
+  fallback: whole          # whole | raise
+tiling:
+  mode: "off"              # "off" | auto | always  (quote: YAML reads bare off as false)
+  tile_span_deg: 60.0
+  overlap: 0.2
+  max_tiles: 6
+  auto_min_span_deg: 100.0
+multi_instance:
+  fov_budget: 110.0
+  margin: 1.5
+  max_groups: 6
+  gate_thresh: 0.8
+  use_instance_mask: true
+  seam_frac: 0.6
+canonicalize_seam: true

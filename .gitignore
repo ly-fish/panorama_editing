@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.eggs/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Data, model weights and experiment outputs are never committed
+data/
+datasets/
+outputs/
+output/
+runs/
+checkpoints/
+logs/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+
+# Secrets
+.env
+.env.*
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

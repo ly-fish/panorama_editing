@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the thesis below."
+title: "EditPano: geometry-consistent local editing of 360° panoramas"
+type: software
+version: 1.0.0
+date-released: 2026-09-28
+license: Apache-2.0
+repository-code: "https://github.com/ly-fish/panorama_editing"
+authors:
+  - family-names: Yu
+    given-names: Liangyue
+preferred-citation:
+  type: thesis
+  thesis-type: "PhD thesis"
+  title: "Generative AI and Multi-Agent Systems for Adaptive Interaction in Immersive Environments"
+  authors:
+    - family-names: Yu
+      given-names: Liangyue
+  institution:
+    name: "University of Glasgow"
+  year: 2026

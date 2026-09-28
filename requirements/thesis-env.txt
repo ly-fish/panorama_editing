@@ -1,0 +1,23 @@
+# Exact environment in which the thesis results were produced and in which this
+# package was verified bit-for-bit against them (Python 3.10, CUDA 12.6, H100).
+#
+#   pip install -c requirements/thesis-env.txt -e ".[edit,grounding,eval]"
+#
+# Floating-point kernels differ slightly across OpenCV / Pillow releases
+# (e.g. OpenCV 5.0 changes ~0.2 % of pixels on ROI borders by a few grey levels),
+# so pin these versions whenever exact reproduction matters.
+numpy==2.2.6
+opencv-python-headless==4.13.0.92
+pillow==12.0.0
+torch==2.10.0
+torchvision==0.25.0
+transformers==5.3.0
+accelerate==1.13.0
+safetensors==0.7.0
+huggingface_hub==1.7.1
+scikit-image==0.25.2
+scipy==1.15.3
+lpips==0.1.4
+# Not on PyPI at the recorded revisions -- install explicitly:
+#   diffusers @ git+https://github.com/huggingface/diffusers@e5aa719241f9b74d6700be3320a777799bfab70a
+#   clip      @ git+https://github.com/openai/CLIP.git   (Region-CLIP reference backend)
